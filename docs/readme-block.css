@@ -1,0 +1,37 @@
+.readme-holder {
+    margin: 16px 0;
+}
+.readme-holder h3 {
+  margin: 24px 0 16px;
+  font-size: 1.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaeaea;
+}
+.readme-holder p {
+  color: #2e2e2e;
+  margin: 0 0 16px;
+}
+
+.readme-holder .code {
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 1.6em;
+  overflow-x: auto;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+}
+
+ol {
+  padding: 0;
+  margin: 0 0 16px;
+}
+ol li {
+  margin-left: 28px;
+  padding-left: 0;
+}
+li code {
+  padding: 2px 4px;
+  color: #c0341d;
+  background-color: #fbe5e1;
+  border-radius: 4px;
+}

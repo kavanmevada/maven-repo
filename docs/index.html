@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="maven-repo.css">
+	<link rel="stylesheet" type="text/css" href="readme-block.css">
+	<title>Kavan's Maven Repository</title>
+</head>
+<body>
+	<h1>Kavan's Maven Repository</h1>
+	<div class="maven-block">
+		<label class="accordion">elementx.playback</label>
+		<div class="panel" style="margin-left: 2em">
+			<label class="accordion">playback</label>
+			<ul class="panel">
+				<li>1.0.0</li>
+			</ul>
+		</div>
+		<!-- <label class="accordion">elementx.systemui</label>
+		<ul class="panel">
+			<label class="accordion">systemui</label>
+			<ul class="panel">
+				<li>1.0.0</li>
+				<li>1.0.1</li>
+			</ul>
+		</ul> -->
+		<label class="accordion">com.gnome.extensions</label>
+		<ul class="panel">
+			<label class="accordion">gnome</label>
+			<ul class="panel">
+				<li>1.0.0</li>
+			</ul>
+		</ul>
+		<label class="accordion">com.gnome.floatingcard</label>
+		<ul class="panel">
+			<label class="accordion">floatingcard</label>
+			<ul class="panel">
+				<li>1.0.0</li>
+			</ul>
+		</ul>
+	</div>
+
+
+	<p style="color:purple;">In real open source, you have the right to control your own destiny.</p>
+
+	<script>
+	   var acc=document.getElementsByClassName("accordion");for(i=0;i<acc.length;i++)acc[i].addEventListener("click",function(){this.classList.toggle("active");var a=this.nextElementSibling;a.style.display="block"===a.style.display?"none":"block"});
+	</script>
+	<div class="readme-holder">
+		<h3 class="readme-title">Gradle / Maven dependency</h3>
+		<p>At the moment we do not have a publishing mechanism to a maven repository so the easiest way to add the library to your app is via a GitLab Dependency</p>
+		
+		<div class="code">
+		<code><span style="white-space:pre-wrap;">
+   repositories {
+        ...
+        maven { 
+           url "https://github.com/kavanmevada/maven-repo/raw/master"
+        }
+        maven { 
+           url "https://gitlab.com/kavanmevada/maven-repo/raw/master"
+        }
+   }
+   dependencies {
+        ...
+        implementation 'elementx.playback:playback:1.0.0'
+   }
+		</span><code></div>
+		<h3>License</h3>
+		<p>All these maven dependencies launch under below license.</p>
+		<div class="code">
+			<code><span style="white-space:pre-wrap;">
+    Copyright (C) 2019  Kavan Mevada
+    
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.		 
+		</span><code></div>
+	</div>
+</body>
+</html>
